@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/signin.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Monoton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Michroma&family=Monoton&display=swap" rel="stylesheet">
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="body">
+       <img src="/static/images/green (9).jpg" alt="">
+    </div>
+      <nav class="menu">
+        <a href="{% url 'homepage' %}">Home</a>
+      <a href="/HTML/about.html">About Us</a>
+      <a href="/HTML/contact.html">Contacts</a>
+      <a href="/HTML/faq.html">FAQ</a>
+    </nav>
+    <div class="box1 box">
+       
+        <h1>Welcome </h1>
+        
+        <form class="signin-form">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button type="submit">Sign In</button>
+        </form>
+        <div class="social-login">
+            <p>OR Sign In by</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google">
+        </div>
+        <div class="signup-link">
+            <p>Don't have an account?</p><a href="{% url 'signup' %}"><button>SignUp</button></a>
+        </div>
+
+         <div class="box2 box">
+      <h1>WEAR TOME</h1>
+    </div>
+    </div>
+
+    <div class="box3">
+        <div class="box3_img">
+           <img src="/static/images/baby-plant.png" alt="">
+        </div>
+        <div class="box3_overlay">
+            <div class="date-icon">
+                <span>11 July 2025</span>
+                <span>🚀</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

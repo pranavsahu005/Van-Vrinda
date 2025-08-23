@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+    <head></head>
+    <body>
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <p>Plant name: <input type="text" name="pname"></p>
+            <p>Description: <input type="text" name="description"></p>
+            <p>Price: <input type="number" name="price"></p>
+            <p>Image: <input type="file" name="image"></p>
+            <select name="category">
+                <option value="1">Indoor</option>
+                <option value="4">Large</option>
+                <option value="7">Aquatic</option>
+                <option value="10">Medicinal</option>
+            </select>
+            <p>Plant size: <input type="text" placeholder="in centimeter" name="plant_size"></p>
+            <p>Plant weight: <input type="number" placeholder="in kilogram" name="plant_weight"></p>
+            <select name="soil_type">
+                <option value="alluvial">alluvial</option>
+                <option value="loamy">loamy</option>
+                <option value="sandy">sandy</option>
+                <option value="clay">clay</option>
+                <option value="saline">saline</option>
+            </select>
+            <button>submit</button>
+        </form>
+    </body>
+</html>
